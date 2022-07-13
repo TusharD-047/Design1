@@ -1,0 +1,350 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Albert;
+	max-width: 100%;
+	max-height: 100%;
+	box-sizing: border-box;
+}
+
+body, html{
+	background: whitesmoke;
+	width: 100%;
+	height: 100%;
+}
+
+@font-face {
+  font-family: Albert;
+  src: url(Fonts/Albertsans.ttf);
+}
+
+.groupcardsPc{
+	display: none;
+}
+
+.navbar{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	background: white;
+}
+
+.navbar a {
+  font-size: 1em;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown .dropbtn {
+  font-size: 1em;;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: lightcoral;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.items{
+	display: none;
+}
+.left{
+	display: flex;
+	align-items: center;
+}
+
+.left img{
+	margin: 10px;
+}
+
+.short_card{
+	height: auto;
+	background: #e4e8fb;
+	border-radius: 8px;
+	align-items: center;
+	display: flex;
+	padding: 10px;
+	margin: 8px;
+}
+
+.short_card p{
+	font-size: 12px;
+	font-weight: bold;
+	margin: 5px;
+	font-family: Albert;
+}
+
+.short_card img{
+	margin: 5px;
+	border-radius: 50%;
+}
+
+.med_card{
+	display: flex;
+	padding: 10px;
+	border-radius: 8px;
+	background: white;
+}
+
+.card{
+	margin: 20px 10px 0px 10px;
+}
+
+.details{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: Albert;
+	font-size: 12px;
+	padding: 6px;
+}
+
+.large_card{
+	background: url(Images/tropical.jpeg) no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin-top: 10px;
+	min-height: 250px;
+	max-width: 100%;
+	border-radius: 8px;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 5px;
+}
+
+.add-Details{
+	display: flex;
+	flex-direction: row;
+}
+
+.add-Details p{
+	padding: 5px;
+}
+
+.med_Details{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.med_type2 {
+	display: flex;
+	border-radius: 8px;
+	background: white;
+	margin: 20px 10px 0px 10px;
+}
+.med_type2 img{
+	max-width: 70px;
+	max-height: 70px;
+}
+
+.medCardsPc{
+	display: none;
+}
+
+@media (min-width: 900px){
+
+	body{
+		background: white;
+	}
+
+	.items{
+		display: flex;
+	}
+
+	.short_card{
+		display: none;
+	}
+
+	.groupCards{
+		display: none;
+	}
+	.groupcardsPc{
+		display: flex;
+		flex-direction: column;
+		background: white;
+	}
+
+	.navbar{
+		margin: 10px 15% 0px 15%;
+	}
+
+	#logo{
+		width: 70px;
+	}
+
+	.medCardsPc{
+		display: flex;
+		margin: 10px 15% 0px 15%;
+		padding: 0;
+	}
+	.largeCardsPc{
+		width: 70%;
+		display: flex;
+		margin: 20px 15% 0px 15%;
+		height: 70vh;
+	}
+
+	.largeCard1{
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		width: 25%;
+
+	}
+	.largeCard2{
+		display: flex;
+		height: 100%;
+		width: 46%;
+	}
+	.largeCard3{
+		display: flex;
+		flex-direction: column;
+		width: 25%;
+		height: 100%;
+	}
+
+	.details2{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		background: url(Images/purple.jpeg) no-repeat;
+		width: 100%;
+		height: 48%;
+    padding: 4px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 8px;
+	}
+
+	.details3{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		background: url(Images/pear.jpeg) no-repeat;
+		width: 100%;
+		height: 48%;
+    padding: 4px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 8px;
+	}
+	.details4{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		background: url(Images/tropical.jpeg) no-repeat;
+		width: 100%;
+		height: 100%;
+    padding: 16px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 8px;
+	}
+	.details5{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		background: url(Images/tech.jpeg) no-repeat ;
+		width: 100%;
+		height: 48%;
+    padding: 4px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 8px;
+	}
+	.details6{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		width: 100%;
+		height: 48%;
+    padding: 4px;
+    background: url(Images/car.jpeg) no-repeat ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 8px;
+	}
+
+	.buffer{
+		width: 2%;
+		background: white;
+	}
+	.ver_Buffer{
+		height: 4%;
+		background: white;
+	}
+
+	.pHead{
+		font-weight: bold;
+		color: white;
+		font-size: 20px; 
+		padding: 5px;
+	}
+	.heading{
+		font-size: 14px;
+		color: white; 
+		display: inline; 
+		text-align: center;
+		width:50px;
+		background: purple; 
+		border-radius: 8px; 
+		padding: 4px;
+		font-weight: bold;
+	}
+	.detailsPc{
+		padding: 5px;
+		color: white;
+		font-size: 14px;
+	}
+
+}
